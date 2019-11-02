@@ -46,7 +46,7 @@ template {
 
 a, a:visited {
 	background-color: transparent;
-    color: hsla(187, 36%, 64%, 1);
+    color: hsla(183, 75%, 64%, 1);
     text-decoration: none;
     -webkit-transition: all .1s ease-in-out;
 	-moz-transition: all .1s ease-in-out;
@@ -235,7 +235,7 @@ Typography
 --------------------------------------------------------------*/
 
 body, button, input, select, textarea {
-	color: hsl(0, 0%, 20%);
+	color: hsl(0, 0%, 75%);
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	font-size: 1.05em;
@@ -245,8 +245,9 @@ body, button, input, select, textarea {
 
 h1, h2, h3 {
 	font-family: Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 	clear: both;
+    color: hsl(0, 0%, 85%);
 }
 
 h4, h5, h6 {
@@ -268,16 +269,22 @@ b,
 strong {
 	font-weight: 600;
     font-size: .95em;
+    color: hsl(0, 0%, 85%);
 }
 
 dfn,
-cite,
-i {
+cite {
 	font-style: italic;
 }
 
+i {
+	font-style: italic;
+    color: hsla(47, 76%, 50%, 1);
+}
+
+
 em {
-    color: hsl(200, 40%, 50%);
+    color: hsla(300, 64%, 63%, 1);
     font-style: italic;
 }
 
@@ -325,13 +332,11 @@ acronym {
 }
 
 mark {
-    color: hsl(276, 36%, 68%);
     text-decoration: none;
     background: none;
 }
 
 ins {
-	color: hsl(31, 86%, 73%);
     text-decoration: none;
 }
 
@@ -499,7 +504,6 @@ body {
 }
 
 .dark {
-    color: hsl(0, 0%, 90%);
 }
 
 
@@ -550,6 +554,14 @@ Custom
 .card {
     margin: 0 auto;
     text-align: center;
+}
+
+.dark-text {
+    color: hsl(0, 0%, 30%);
+}
+
+.dark-text h1 {
+    color: hsl(0, 0%, 25%);
 }
 
 .contacts {
@@ -643,8 +655,8 @@ input[type='checkbox'] {
     font-weight: 400;
 	line-height: 1.25;
     padding: .75em;
-    color: hsla(187, 36%, 64%, 1);
-    background: hsla(0, 0%, 40%, 1);
+    color: hsla(183, 75%, 64%, 1);
+    background: hsla(0, 0%, 10%, 1);
     cursor: pointer;
     border-radius: 7px;
     transition: all 0.25s ease-out;
@@ -686,11 +698,11 @@ input[type='checkbox'] {
 }
 
 .collapsible-content .content-inner {
-    background: hsla(0, 0%, 30%, 1);
+    background: hsla(0, 0%, 15%, 1);
     border-bottom: 1px solid hsla(202, 100%, 38%, 0.1);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    padding: .5rem 1em;
+    padding: 1rem 1.8em;
 }
 
 /*--------------------------------------------------------------
