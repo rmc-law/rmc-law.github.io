@@ -1,0 +1,31 @@
+{% assign publications = site.data.publications | sort: 'Date' | reverse %}
+{% assign preprints = publications | where:"Type","preprint" %}
+
+{% for output in preprints %}{% if forloop.first == true %}
+  <h3 class="output-category">Preprints</h3> {% endif %}
+  <div class="output-item">
+    <!-- authors -->
+    {{ output.Authors }}
+    <!-- date -->
+    {% if output.Status == 'published' %}
+      ({{ output.Date | date: "%Y" }}).
+    {% else %}
+      (<i>{{ output.Status }}</i>).
+    {% endif %}
+    <!-- title -->
+    {{ output.Title | strip }}.
+    <!-- journal -->
+    <i>{{ output.Journal | strip }}</i>.
+    <!-- doi -->
+    {% if output['DOI Link'] %}
+        <a href="{{ output['DOI Link'] }}">https://doi.org/{{ output['DOI Link'] | remove:'https://' | remove:'http://' | remove:'doi.org/' | remove:'dx.doi.org/' | remove:'arxiv.org/abs/'}}</a>
+    {% endif %}
+    <!-- pdf -->
+    {% if output['PDF Link'] %}
+        <a href="{{ output['PDF Link'] }}" ><i class="far fa-file-pdf"></i></a>
+    {% endif %}
+
+
+
+  </div>
+{% endfor %}
