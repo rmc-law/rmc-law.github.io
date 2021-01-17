@@ -1,31 +1,46 @@
-{% assign publications = site.data.publications | sort: 'Date' | reverse %}
-{% assign preprints = publications | where:"Type","preprint" %}
+{% assign pubs = site.data.publications | sort: 'Date' | reverse %}
+{% assign preprints = pubs | where:"Type","preprint" %}
+{% assign published = pubs | where:"Type","published" %}
+{% assign year_header = 0 %}
 
-{% for output in preprints %}{% if forloop.first == true %}
-  <h3 class="output-category">Preprints</h3> {% endif %}
-  <div class="output-item">
-    <!-- authors -->
-    {{ output.Authors }}
-    <!-- date -->
-    {% if output.Status == 'published' %}
-      ({{ output.Date | date: "%Y" }}).
-    {% else %}
-      (<i>{{ output.Status }}</i>).
+{% for preprint in preprints %}
+  <div class="preprints">
+    {% if forloop.first %}
+      <h3 class="output-category">Preprints</h3>
     {% endif %}
-    <!-- title -->
-    {{ output.Title | strip }}.
-    <!-- journal -->
-    <i>{{ output.Journal | strip }}</i>.
-    <!-- doi -->
-    {% if output['DOI Link'] %}
-        <a href="{{ output['DOI Link'] }}">https://doi.org/{{ output['DOI Link'] | remove:'https://' | remove:'http://' | remove:'doi.org/' | remove:'dx.doi.org/' | remove:'arxiv.org/abs/'}}</a>
+    <div class="pub-items">
+      <div class="pub-item">
+        <span class="pub-authors">{{ preprint.Authors }}</span>
+        <span class="pub-year">(<i>{{ preprint.Status }}</i>).</span>
+        <span class="pub-title">{{ preprint.Title }}.</span>
+        <span class="pub-pdf">[<a href="{{ preprint.Link }}" target="_blank">link</a>]</span>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+{% for pub in published %}
+  <div class="publications">
+    {% assign pub_year = pub.Date | date: '%Y' %}
+    {% if year_header != pub_year %}
+      <div class="year">
+        <h3 class="output-category">{{ pub.Date | date: '%Y' }}</h3>
+      </div>
+      {% assign year_header = pub_year %}
     {% endif %}
-    <!-- pdf -->
-    {% if output['PDF Link'] %}
-        <a href="{{ output['PDF Link'] }}" ><i class="far fa-file-pdf"></i></a>
-    {% endif %}
-
-
-
+    <div class="pub-items">
+      <div class="pub-item">
+        <span class="pub-authors">{{ pub.Authors }}</span>
+        <span class="pub-year">({{ pub.Date | date: '%Y' }}).</span>
+        <span class="pub-title">{{ pub.Title }}.</span>
+        <span class="pub-journal"><i>{{ pub.Journal }}.</i></span>
+        {% if pub.Link %}
+          <span class="pub-pdf">[<a href="{{ pub.Link | escape }}" target="_blank">link</a>]</span>
+        {% endif %}
+        {% if pub.Notes %}
+            <span class="pub-notes">{{ pub.Notes }}</span>
+        {% endif %}
+      </div>
+    </div>
   </div>
 {% endfor %}

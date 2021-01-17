@@ -6,5 +6,6 @@ order: 2
 ---
 
 {%- include research.html -%}
-{%- include publications.html -%}
-{%- include presentations.html -%}
+<!-- {%- include publications.html -%} -->
+
+<!-- {%- include presentations.html -%} -->

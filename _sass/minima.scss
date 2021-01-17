@@ -9,16 +9,17 @@ $base-font-family: system-ui,-apple-system,Segoe UI,Helvetica,Arial,Roboto,sans-
 $base-font-size:   1.25rem !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 1.7 !default;
 
 $spacing-unit:     30px !default;
 
 // $text-color:       #6b7280 !default;
-$text-color:       #4a5568 !default;
+// $text-color:       rgb(60, 60, 90) !default;
+$text-color:       hsl(0, 0%, 33%);
 // $background-color: #d5d9df !default;
-$background-color: #edf2f7 !default;
+$background-color: #F6F6F6 !default;
 $brand-color:      #0e7490 !default;
-$link-hover-color: $brand-color !default;
+$link-hover-color: darken($brand-color,10%) !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -27,10 +28,11 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    820px !default;
+$content-width:    1100px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-small-phone:   300px !default;
+$on-medium-phone:  600px !default;
+$on-laptop:        900px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
