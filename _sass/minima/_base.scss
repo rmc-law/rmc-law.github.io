@@ -101,7 +101,7 @@ nav a:nth-child(1) {
   }
 }
 
-.about {
+.container {
   display: grid;
   grid-template-columns: 18rem 1fr;
   max-width: $content-width;
@@ -111,7 +111,7 @@ nav a:nth-child(1) {
   }
 }
 
-.about figure {
+.container figure {
   display: block;
   // margin: 0 auto;
 
@@ -161,7 +161,7 @@ nav a:nth-child(1) {
   }
 }
 
-.info {
+.main-text {
   padding-top: 2rem;
 }
 
