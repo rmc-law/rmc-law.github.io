@@ -302,3 +302,51 @@
     }
   }
 }
+
+
+
+/**
+ * 404
+ */
+.error-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 364px;
+  padding: 2rem;
+  background: white;
+  color: rgb(14, 30, 37);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .16);
+
+  h1 {
+    margin-top: 1rem;
+    font-size: 1.725rem;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 1rem 0;
+    color: hsl(0, 0%, 33%);
+  }
+
+  a {
+    box-shadow: none;
+     &:hover {
+       color: $brand-color;
+     }
+  }
+}

@@ -3,7 +3,7 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | sort: "order" | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }} <span style="font-family: 'Zhi Mang Xing', cursive;">刘勉剑</span></a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     {%- include social.html -%}
   </div>
 </header>
