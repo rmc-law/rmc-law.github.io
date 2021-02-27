@@ -1,25 +1,3 @@
 <p>My research interests centre around <b>language comprehension and representation</b>. For us to successfully understand what was heard or read, our brains must string together the smaller pieces of sound or text that make up the larger expressions, whilst conforming to the syntax of the given language. In the philosophy of language and formal semantics this is called compositionality. I enjoy learning and thinking about <b>how language constructs and conveys meaning</b>. How does the brain take the meanings of smaller expressions, like words, and combine them into an expression with a (more) complex meaning? What <em>are</em> these meanings exactly? We also readily understand language at a longer timescale. That our brains do these without the need of explicit awareness underscores just how cool and remarkable language comprehension is.</p>
 
 <p>Naturally, as I spend more time with cognitive neuroscientists, I must also try and figure out what they (and scientists in general) mean by <a href="https://plato.stanford.edu/entries/science-mechanisms/" target="_blank">'mechanisms' or 'organisations'</a>.</p>
-
-{% assign research-items = site.data.research %}
-
-<div class="publications">
-  <h4 class="heading">Papers</h4>
-  <div class="pub-items">
-    {% for research-item in research-items %}
-      <a href="{{ research-item.Link }}" target="_blank">
-        <div class="pub-item">
-          <div class="pub-title"><h5>{{ research-item.Title }}</h5></div>
-          <div class="pub-year">{{ research-item.Year }}</div>
-          {% if research-item.Status == 'published' %}
-            <div class="pub-journal">{{ research-item.Journal }}</div>
-          {% elsif research-item.Status == 'accepted' %}
-            <div class="pub-journal">bioRxiv (accepted at the {{ research-item.Journal }})</div>
-          {% endif %}
-          <div class="pub-Authors">{{ research-item.Authors }}</div>
-        </div>
-      </a>
-    {% endfor %}
-  </div>
-</div>

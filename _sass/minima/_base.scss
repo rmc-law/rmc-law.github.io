@@ -171,13 +171,14 @@ nav a:nth-child(1) {
  * Research
  */
 
- .publications {
-   margin-top: 5.425rem;
+ .publications, .presentations {
+   // margin-top: 5.425rem;
  }
 
 .heading {
   font-weight: bold;
   color: black;
+  margin-top: 2.75rem;
 }
 
 .pub-items a {
@@ -213,6 +214,11 @@ nav a:nth-child(1) {
   .pub-authors {
     font-weight: 300;
   }
+}
+
+.output-item {
+  margin-top: 1.75rem;
+  line-height: 1.75rem;
 }
 
 /**

@@ -1,0 +1,39 @@
+{% assign presentations = site.data.presentations | sort: 'Date' | reverse %}
+{% assign lecture = presentations | where:"Type","lecture" %}
+{% assign slide = presentations | where:"Type","slide" %}
+{% assign poster = presentations | where:"Type","poster" %}
+
+{% for output in lecture %}{% if forloop.first == true %}
+  <h3 class="output-category">Guest lecture</h3> {% endif %}
+  <div class="output-item">
+    {{ output.Authors }}
+    ({{ output.Date | date: "%Y" }}, {{ output.Date | date: "%B" }}).
+    {{ output.Title | strip }}.
+    {{ output.Venue | strip }}.
+    {{ output.Location | strip }}.
+  </div>
+{% endfor %}
+
+{% for output in slide %}{% if forloop.first == true %}
+  <h3 class="output-category">Slide presentations</h3> {% endif %}
+  <div class="output-item">
+    {{ output.Authors }}
+    ({{ output.Date | date: "%Y" }}, {{ output.Date | date: "%B" }}).
+    {{ output.Title | strip }}.
+    {{ output.Venue | strip }}.
+    {{ output.Location | strip }}.
+  </div>
+{% endfor %}
+
+{% for output in poster %}{% if forloop.first == true %}
+  <h3 class="output-category">Poster presentations</h3> {% endif %}
+  <div class="output-item">
+    <div class="output-item">
+      {{ output.Authors }}
+      ({{ output.Date | date: "%Y" }}, {{ output.Date | date: "%B" }}).
+      {{ output.Title | strip }}.
+      {{ output.Venue | strip }}.
+      {{ output.Location | strip }}.
+    </div>
+  </div>
+{% endfor %}
