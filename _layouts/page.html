@@ -8,7 +8,20 @@ layout: default
   </header>
 
   <div class="post-content">
-    {{ content }}
+
+    <div class="container">
+      <div class="">
+        <figure class="headshot">
+          <img src="{{ base.url }}/assets/images/pic_RL.png" alt="Ryan Law's headshot">
+        </figure>
+
+        {%- include nav.html -%}
+
+      </div>
+      <div class="main-text">
+        {{ content }}
+      </div>
+
   </div>
 
 </article>
