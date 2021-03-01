@@ -70,8 +70,8 @@ nav {
   margin: 1.5rem 0;
 
   @include media-query($on-laptop) {
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: start;
   }
 }
 
@@ -82,8 +82,8 @@ nav a {
   font-weight: 300;
 
   @include media-query($on-laptop) {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0;
+    margin-right: 1.5rem;
   }
 
   &:hover {
