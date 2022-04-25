@@ -1,4 +1,5 @@
 {% assign analytics-id = site.analytics-id %}
+{% assign G-id = site.G-id %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async
@@ -9,4 +10,14 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '{{analytics-id}}');
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{G-id}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{G-id}}');
 </script>
