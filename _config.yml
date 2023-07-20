@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ryan Law
+title: Ryan M.C. Law
 email: ryan.law@mrc-cbu.cam.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Cognitive Neuroscientist, Linguist, Gates Cambridge Scholar, Bornean Malaysian
