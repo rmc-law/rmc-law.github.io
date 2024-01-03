@@ -7,7 +7,7 @@
 $base-font-family: system-ui,-apple-system,Segoe UI,Helvetica,Arial,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji !default;
 
 $base-font-size:   1.25rem !default;
-$base-font-weight: 400 !default;
+$base-font-weight: 300 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.7 !default;
 
@@ -15,7 +15,8 @@ $spacing-unit:     30px !default;
 
 // $text-color:       #6b7280 !default;
 // $text-color:       rgb(60, 60, 90) !default;
-$text-color:       hsl(0, 0%, 33%);
+// $text-color:       hsl(0, 0%, 33%);
+$text-color:       rgba(17,24,39,1);
 // $background-color: #d5d9df !default;
 $background-color: #fff !default;
 $brand-color:      #0e7490 !default;
