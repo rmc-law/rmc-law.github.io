@@ -1,4 +1,4 @@
-{% assign research-items = site.data.research %}
+{% assign research-items = site.data.publications | sort: 'Date' | reverse %}
 
 <div class="publications">
   <h4 class="heading"  style="margin-top: 0;">Papers</h4>
@@ -7,7 +7,7 @@
       <a href="{{ research-item.Link }}" target="_blank">
         <div class="pub-item">
           <div class="pub-title"><h5>{{ research-item.Title }}</h5></div>
-          <div class="pub-year">{{ research-item.Year }}</div>
+          <div class="pub-year">{{ research-item.Date }}</div>
           {% if research-item.Status == 'published' %}
             <div class="pub-journal">{{ research-item.Journal }}</div>
           {% elsif research-item.Status == 'accepted' %}

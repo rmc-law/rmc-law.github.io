@@ -1,17 +1,15 @@
 {% assign presentations = site.data.presentations | sort: 'Date' | reverse %}
-{% assign lecture = presentations | where:"Type","lecture" %}
+{% assign invited = presentations | where:"Type","invited" %}
 {% assign slide = presentations | where:"Type","slide" %}
 {% assign poster = presentations | where:"Type","poster" %}
 
 <div class="presentations">
-  {% for output in lecture %}{% if forloop.first == true %}
-    <h4 class="heading" style="margin-top: 0;">Guest lecture</h4> {% endif %}
+  {% for output in invited %}{% if forloop.first == true %}
+    <h4 class="heading" style="margin-top: 0;">Invited talks</h4> {% endif %}
     <div class="output-item">
-      {{ output.Authors }}
-      ({{ output.Date | date: "%Y" }}, {{ output.Date | date: "%B" }}).
-      {{ output.Title | strip }}.
       {{ output.Venue | strip }}.
       {{ output.Location | strip }}.
+      ({{ output.Date | date: "%Y" }}, {{ output.Date | date: "%B" }}).
     </div>
   {% endfor %}
 
