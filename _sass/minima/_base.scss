@@ -183,26 +183,26 @@ nav a:nth-child(1) {
  }
 
 .heading {
-  font-weight: bold;
+  font-weight: 300;
   color: #b7b7b7;
   margin-top: 2.75rem;
 }
 
 .pub-items a {
-  color: lighten(rgba(24,28,36,1),35%);
+  color: rgba(17,24,39,1);
 
   &:hover {
-    color: lighten(rgba(24,28,36,1),15%);
+    color: hsl(220, 9%, 46%);
   }
 }
 
 .pub-item {
   margin: 2.5rem 0;
-  font-size: 1.05rem;
-  line-height: 2rem;
+  font-weight: 300;
+  font-size: 1.0rem;
+  line-height: 1.85rem;
 
   .pub-title h5 {
-    // color: lighten(rgba(24,28,36,1),30%);
     color: inherit;
     font-weight: 600;
     font-size: 1.25rem;
@@ -224,8 +224,13 @@ nav a:nth-child(1) {
 }
 
 .output-item {
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
   line-height: 1.75rem;
+  font-size: 1.1rem;
+}
+
+b {
+  color: inherit;
 }
 
 /**
@@ -281,18 +286,19 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  // color: $brand-color;
   text-decoration: none;
-  font-weight: 600;
-  box-shadow: inset 0 -.125em 0 0 $background-color,inset 0 -.375em 0 0 rgba(165,243,252,.4);
+  // font-weight: 600;
+  // box-shadow: inset 0 -.125em 0 0 $background-color,inset 0 -.375em 0 0 rgba(165,243,252,.4);
 
   // &:visited {
   //   color: darken($brand-color, 15%);
   // }
 
   &:hover {
-    color: $link-hover-color;
+    // color: $link-hover-color;
     text-decoration: none;
+    box-shadow: inset 0 -.145em 0 0 $background-color,inset 0 -.45em 0 0 rgba(165,243,252,.4);
   }
 
   .social-media-list &:hover {
