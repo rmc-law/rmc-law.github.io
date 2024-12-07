@@ -1,21 +1,21 @@
 Date,Type,Title,Authors,Venue,Location
-15/10/2020,invited,Measuring the neural processing of syntax using lists,"<b>Law, R.M.C.</b>","Linguistics Department, Dartmouth College",Online
-01/12/2023,invited,,,"Bristol University Neural Computation Seminar, School of Computer Science","Bristol, UK"
-01/05/2024,invited,,,UCL Linguistics Departmental Seminar,"London, UK"
-01/03/2019,poster,'Nonetheless' can reverse predictions immediately: evidence from ERPs,"Arkhipova, Y., <b>Law, R.M.C.</b>, Xiang, M., & Chow, W.Y.",32nd Annual CUNY Human Sentence Processing Conference,"Boulder, USA"
-01/08/2019,poster,MEG effects of syntactic composition when local conceptual combination is controlled,"<b>Law, R.M.C.</b>, Pylkkänen, L.",11th Annual Meeting of the Society for the Neurobiology of Language,"Helsinki, Finland"
-01/08/2019,poster,Discourse belief updating in the right hemisphere,"Tulling, M., <b>Law, R.M.C.</b>, Cournane, A., & Pylkkänen, L.",11th Annual Meeting of the Society for the Neurobiology of Language,"Helsinki, Finland"
-01/09/2019,poster,'Nonetheless' can reverse predictions immediately: evidence from ERPs,"Arkhipova, Y., Sostarics, T., <b>Law, R.M.C.</b>, Xiang, M., & Chow, W.Y.",25th Architectures and Mechanisms of Language Processing Conference,"Moscow, Russia"
-01/10/2019,poster,Lists with and without syntax: How the presence of global syntactic structure affect localised MEG activity,"<b>Law, R.M.C.</b>, Pylkkänen, L.",International Brain and Syntax Think Tank 2019,"Evanston, USA"
-01/05/2020,poster,Lists with and without syntax: Neural correlates of syntactic structure,"<b>Law, R.M.C.</b>, Pylkkänen, L.",Cognitive Neuroscience Society 2020 Virtual Meeting,(Presented remotely)
-01/06/2020,poster,Lists with and without syntax: Neural correlates of syntactic structure,"<b>Law, R.M.C.</b>, Pylkkänen, L.",International Max Planck Research School Conference: Interdisciplinary Approaches to the Language Sciences,(Presented remotely)
-01/04/2022,poster,Cortical tracking of linguistic units at different rates,"<b>Law, R.M.C.</b>, Kaufeld, G., Bosker, H.R., Martin, A.E.",18th NVP Winter Conference on Brain and Cognition,"Egmond aan Zee, the Netherlands"
-01/06/2022,poster,Decoding composition during natural listening,"<b>Law, R.M.C.</b>, Weissbart, H., Martin, A.E.",International Max Planck Research School Conference: Interdisciplinary Approaches to the Language Sciences,"Nijmegen, the Netherlands"
-23/10/2023,poster,An MEEG study bridging semantic composition and semantic cognition,"<b>Law, R.M.C.</b>, Lambon Ralph, M.A., Hauk, O.",15th Annual Meeting of the Society for the Neurobiology of Language,"Marseille, France"
-01/10/2024,poster,Tracking the neural dynamics of compositional semantics with MEG and EEG,"<b>Law, R.M.C.</b>, Lambon Ralph, M.A., Hauk, O.",MEG-UKI Conference 2024,"Birmingham, UK"
-01/03/2018,slide,Tracking expectation reversal during discourse comprehension using EEG,"<b>Law, R.M.C.</b>, Arkhipova, Y., & Chow, W.Y.",UCL Faculty of Brain Sciences Fifth Annual Undergraduate Conference,"London, UK"
-01/04/2019,slide,Neural correlates of syntactic structure: MEG study using lists,"<b>Law, R.M.C.</b>, Pylkkänen, L.",Neuroscience of Language Conference 2019,"Abu Dhabi, UAE"
-01/05/2020,slide,Lists with and without syntax: Neural correlates of syntactic structure,"<b>Law, R.M.C.</b>, Pylkkänen, L.",Cognitive Neuroscience Society 2020 Virtual Meeting,(Presented remotely)
-01/09/2021,slide,Cortical tracking of linguistic units at different rates,"<b>Law, R.M.C.</b>, Kaufeld, G., Bosker, H.R., Martin, A.E.",13th Annual Meeting of the Society for the Neurobiology of Language Virtual Edition,(Presented remotely)
-01/05/2022,slide,Decoding composition during natural listening,"<b>Law, R.M.C.</b>, Weissbart, H., Martin, A.E.",Radboud University Cognitive Neuroscience Conference Synapsium,"Nijmegen, the Netherlands"
-01/08/2024,slide,Tracking compositional semantic processing using MEG and EEG,"<b>Law, R.M.C.</b>, Lambon Ralph, M.A., Hauk, O.",23rd International Conference on Biomagnetism,"Sydney, Australia"
+2020-10-15,invited,Measuring the neural processing of syntax using lists,"<b>Law, R.M.C.</b>","Linguistics Department, Dartmouth College",Online
+2023-12-01,invited,,,"Bristol University Neural Computation Seminar, School of Computer Science","Bristol, UK"
+2024-05-01,invited,,,UCL Linguistics Departmental Seminar,"London, UK"
+2019-03-01,poster,'Nonetheless' can reverse predictions immediately: evidence from ERPs,"Arkhipova, Y., <b>Law, R.M.C.</b>, Xiang, M., & Chow, W.Y.",32nd Annual CUNY Human Sentence Processing Conference,"Boulder, USA"
+2019-08-01,poster,MEG effects of syntactic composition when local conceptual combination is controlled,"<b>Law, R.M.C.</b>, Pylkkänen, L.",11th Annual Meeting of the Society for the Neurobiology of Language,"Helsinki, Finland"
+2019-08-01,poster,Discourse belief updating in the right hemisphere,"Tulling, M., <b>Law, R.M.C.</b>, Cournane, A., & Pylkkänen, L.",11th Annual Meeting of the Society for the Neurobiology of Language,"Helsinki, Finland"
+2019-09-01,poster,'Nonetheless' can reverse predictions immediately: evidence from ERPs,"Arkhipova, Y., Sostarics, T., <b>Law, R.M.C.</b>, Xiang, M., & Chow, W.Y.",25th Architectures and Mechanisms of Language Processing Conference,"Moscow, Russia"
+2019-10-01,poster,Lists with and without syntax: How the presence of global syntactic structure affect localised MEG activity,"<b>Law, R.M.C.</b>, Pylkkänen, L.",International Brain and Syntax Think Tank 2019,"Evanston, USA"
+2020-05-01,poster,Lists with and without syntax: Neural correlates of syntactic structure,"<b>Law, R.M.C.</b>, Pylkkänen, L.",Cognitive Neuroscience Society 2020 Virtual Meeting,(Presented remotely)
+2020-06-01,poster,Lists with and without syntax: Neural correlates of syntactic structure,"<b>Law, R.M.C.</b>, Pylkkänen, L.",International Max Planck Research School Conference: Interdisciplinary Approaches to the Language Sciences,(Presented remotely)
+2022-04-01,poster,Cortical tracking of linguistic units at different rates,"<b>Law, R.M.C.</b>, Kaufeld, G., Bosker, H.R., Martin, A.E.",18th NVP Winter Conference on Brain and Cognition,"Egmond aan Zee, the Netherlands"
+2022-06-01,poster,Decoding composition during natural listening,"<b>Law, R.M.C.</b>, Weissbart, H., Martin, A.E.",International Max Planck Research School Conference: Interdisciplinary Approaches to the Language Sciences,"Nijmegen, the Netherlands"
+2023-10-23,poster,An MEEG study bridging semantic composition and semantic cognition,"<b>Law, R.M.C.</b>, Lambon Ralph, M.A., Hauk, O.",15th Annual Meeting of the Society for the Neurobiology of Language,"Marseille, France"
+2024-10-01,poster,Tracking the neural dynamics of compositional semantics with MEG and EEG,"<b>Law, R.M.C.</b>, Lambon Ralph, M.A., Hauk, O.",MEG-UKI Conference 2024,"Birmingham, UK"
+2018-03-01,slide,Tracking expectation reversal during discourse comprehension using EEG,"<b>Law, R.M.C.</b>, Arkhipova, Y., & Chow, W.Y.",UCL Faculty of Brain Sciences Fifth Annual Undergraduate Conference,"London, UK"
+2019-04-01,slide,Neural correlates of syntactic structure: MEG study using lists,"<b>Law, R.M.C.</b>, Pylkkänen, L.",Neuroscience of Language Conference 2019,"Abu Dhabi, UAE"
+2020-05-01,slide,Lists with and without syntax: Neural correlates of syntactic structure,"<b>Law, R.M.C.</b>, Pylkkänen, L.",Cognitive Neuroscience Society 2020 Virtual Meeting,(Presented remotely)
+2021-09-01,slide,Cortical tracking of linguistic units at different rates,"<b>Law, R.M.C.</b>, Kaufeld, G., Bosker, H.R., Martin, A.E.",13th Annual Meeting of the Society for the Neurobiology of Language Virtual Edition,(Presented remotely)
+2022-05-01,slide,Decoding composition during natural listening,"<b>Law, R.M.C.</b>, Weissbart, H., Martin, A.E.",Radboud University Cognitive Neuroscience Conference Synapsium,"Nijmegen, the Netherlands"
+2024-08-01,slide,Tracking compositional semantic processing using MEG and EEG,"<b>Law, R.M.C.</b>, Lambon Ralph, M.A., Hauk, O.",23rd International Conference on Biomagnetism,"Sydney, Australia"
