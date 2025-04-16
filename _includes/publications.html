@@ -12,6 +12,8 @@
             <div class="pub-journal">{{ research-item.Journal }}</div>
           {% elsif research-item.Status == 'accepted' %}
             <div class="pub-journal">bioRxiv (accepted at the {{ research-item.Journal }})</div>
+          {% elsif research-item.Status == 'preprint' %}
+            <div class="pub-journal">bioRxiv</div>
           {% endif %}
           <div class="pub-Authors">{{ research-item.Authors }}</div>
         </div>
