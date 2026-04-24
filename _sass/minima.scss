@@ -1,4 +1,5 @@
 @charset "utf-8";
+@use "sass:color";
 
 // Define defaults for each variable.
 
@@ -20,11 +21,11 @@ $text-color:       rgba(17,24,39,1);
 // $background-color: #d5d9df !default;
 $background-color: #fff !default;
 $brand-color:      #0e7490 !default;
-$link-hover-color: darken($brand-color,10%) !default;
+$link-hover-color: color.adjust($brand-color, $lightness: -10%) !default;
 
 $grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%) !default;
+$grey-color-dark: color.adjust($grey-color, $lightness: -25%) !default;
 
 $table-text-align: left !default;
 
@@ -53,8 +54,6 @@ $on-laptop:        900px !default;
 }
 
 // Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+@import "minima/base";
+@import "minima/layout";
+@import "minima/syntax-highlighting";
