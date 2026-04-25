@@ -2,7 +2,7 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["main"] # Replace with "master" if that is your default branch name
+    branches: ["master"]
 
 permissions:
   contents: read
@@ -23,7 +23,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3' # Stable version that handles modern Sass well
+          ruby-version: '4.0'
           bundler-cache: true
           
       - name: Setup Pages
