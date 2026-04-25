@@ -149,6 +149,7 @@ DEPENDENCIES
   csv
   jekyll (~> 4.3)
   jekyll-feed (~> 0.12)
+  jekyll-sass-converter (~> 3.0)
   logger
   minima (~> 2.5)
   tzinfo (~> 1.2)
