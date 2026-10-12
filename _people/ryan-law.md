@@ -4,7 +4,7 @@ surname: Law
 role: owner
 order:
 
-email: ryan.law@mrc-cbu.cam.ac.uk
+email: ll674@cam.ac.uk
 
 website: https://rmc-law.github.io
 twitter: rmc_law
