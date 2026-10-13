@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Ryan M.C. Law
-email: ryan.law@mrc-cbu.cam.ac.uk
+email: ll674@cam.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  Cognitive Scientist, Neuroscientist, Linguist, Gates Cambridge Scholar, Bornean Malaysian
+  Cognitive scientist and linguist studying language and cognition using tools from neuroscience, psychology, linguistics, and AI.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
