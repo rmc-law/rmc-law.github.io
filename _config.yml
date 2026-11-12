@@ -12,7 +12,6 @@ cv: /assets/CV_RL.pdf
 google_analytics: G-65DJL13DP3
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-seo-tag
 

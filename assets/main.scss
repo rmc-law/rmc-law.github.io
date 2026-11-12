@@ -1,5 +1,7 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Front matter tells Jekyll to compile this file
 ---
 
-@use "minima";
+@charset "utf-8";
+@use "base";
+@use "layout";

@@ -1,0 +1,259 @@
+@use "sass:math";
+@use "sass:color";
+@use "variables" as *;
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: math.div($spacing-unit, 2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, Roboto, sans-serif;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+b {
+  font-weight: 600;
+  color: inherit;
+}
+
+small {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
+
+/**
+ * Navigation (sidebar on desktop, row on small screens)
+ */
+nav {
+  font-size: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem 0;
+
+  @include media-query($on-laptop) {
+    flex-flow: row wrap;
+    justify-content: start;
+  }
+}
+
+nav a {
+  margin: 0.5rem 3rem;
+  color: rgba(107, 114, 128, 1);
+  box-shadow: none;
+  font-weight: 300;
+
+  @include media-query($on-laptop) {
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+
+  &:hover {
+    color: rgba(17, 24, 39, 1);
+    text-decoration: none;
+    box-shadow: none;
+  }
+}
+
+nav a:nth-child(1) {
+  margin-left: 3rem;
+
+  @include media-query($on-laptop) {
+    margin-left: 0;
+  }
+}
+
+/**
+ * Page grid: headshot + nav column, main text column
+ */
+.container {
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+  max-width: $content-width;
+
+  @include media-query($on-laptop) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container figure {
+  display: block;
+
+  @include media-query($on-laptop) {
+    margin: 0;
+  }
+
+  &.headshot {
+    width: 12rem;
+    height: 12rem;
+
+    img {
+      border: 0;
+      width: 12rem;
+      clip: rect(0, 12rem, 12rem, 0);
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+}
+
+/**
+ * Social icons next to the site title
+ */
+.social {
+  display: inline;
+  @include relative-font-size(1.5);
+  line-height: $base-line-height * $base-font-size * 2.25;
+  margin-left: 1.25rem;
+
+  @include media-query(400px) {
+    display: block;
+    clear: both;
+    line-height: 1rem;
+    margin-left: 0;
+  }
+}
+
+.social a {
+  color: color.adjust(rgba(24, 28, 36, 1), $lightness: 50%);
+  margin-right: .5rem;
+  box-shadow: none;
+
+  &:hover {
+    color: rgba(24, 28, 36, 1);
+    box-shadow: none;
+  }
+}
+
+.main-text {
+  padding-top: 2rem;
+}
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure > img {
+  display: block;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  letter-spacing: -.025em;
+  color: #111827;
+}
+
+h4 {
+  font-style: italic;
+}
+
+/**
+ * Links
+ */
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    box-shadow: inset 0 -.145em 0 0 $background-color, inset 0 -.45em 0 0 rgba(165, 243, 252, .4);
+  }
+}
+
+/**
+ * Wrapper
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: math.div($spacing-unit, 2);
+  padding-left: math.div($spacing-unit, 2);
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit * 2;
+    padding-left: $spacing-unit * 2;
+  }
+
+  @include media-query($on-medium-phone) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: math.div($spacing-unit, 2);
+    padding-left: math.div($spacing-unit, 2);
+  }
+
+  @include media-query($on-small-phone) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: math.div($spacing-unit, 3);
+    padding-left: math.div($spacing-unit, 3);
+  }
+}
