@@ -10,7 +10,10 @@ layout: default
     <div class="container">
       <div class="">
         <figure class="headshot">
-          <img src="{{ "/assets/images/IMG_1263.jpg" | relative_url }}" alt="Ryan Law's headshot">
+          <picture>
+            <source type="image/webp" srcset="{{ "/assets/images/headshot.webp" | relative_url }}">
+            <img src="{{ "/assets/images/headshot.jpg" | relative_url }}" alt="Ryan Law's headshot">
+          </picture>
         </figure>
 
         {%- include nav.html -%}

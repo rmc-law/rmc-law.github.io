@@ -129,6 +129,10 @@ nav a:nth-child(1) {
     width: 12rem;
     height: 12rem;
 
+    picture {
+      display: contents;
+    }
+
     img {
       border: 0;
       width: 12rem;
