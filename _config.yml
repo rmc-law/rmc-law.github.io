@@ -31,7 +31,7 @@ plugins:
   - jekyll-feed
 
 # Analytics
-G-id:  G-65DJL13DP3
+google_analytics: G-65DJL13DP3
 
 # Exclude from processing.
 # The following items will not be processed, by default.
