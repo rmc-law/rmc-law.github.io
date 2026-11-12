@@ -6,5 +6,5 @@ vendor
 .presentations.md
 .publications.md
 .bundle
-PLAN.md
 .DS_Store
+local_docs/

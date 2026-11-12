@@ -18,5 +18,4 @@ plugins:
 # Repo docs that shouldn't be published
 exclude:
   - README.md
-  - CLAUDE.md
-  - PLAN.md
+  - local_docs
