@@ -1,0 +1,31 @@
+{%- comment -%}
+  Date | entry rows. Pass a list as include.items. Each item: when, title,
+  optional detail, optional url (makes the title a link), optional links
+  (list of {label, url}). Internal links (starting with /) open in place.
+{%- endcomment -%}
+<ul class="rows">
+  {%- for item in include.items %}
+  <li class="row">
+    <span class="row-when">{{ item.when }}</span>
+    <div class="row-body">
+      <p class="row-title">
+        {%- if item.url -%}
+          <a href="{{ item.url | relative_url }}"{% unless item.url contains "://" %}{% else %} target="_blank"{% endunless %}>{{ item.title }}</a>
+        {%- else -%}
+          {{ item.title }}
+        {%- endif -%}
+      </p>
+      {%- if item.detail %}
+      <p class="row-detail">{{ item.detail }}</p>
+      {%- endif %}
+      {%- if item.links %}
+      <p class="row-links">
+        {%- for l in item.links -%}
+          <a href="{{ l.url | relative_url }}"{% if l.url contains "://" %} target="_blank"{% endif %}>{{ l.label }}</a>
+        {%- endfor -%}
+      </p>
+      {%- endif %}
+    </div>
+  </li>
+  {%- endfor %}
+</ul>
