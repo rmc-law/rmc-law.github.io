@@ -2,13 +2,15 @@
 # Shown in file order (newest first). Each item: when, title, optional detail.
 
 leadership:
+  - when: "2027"
+    title: Program Committee member, 19th Annual Meeting of the Society for the Neurobiology of Language
   - when: "2026"
     title: Program Committee member, 18th Annual Meeting of the Society for the Neurobiology of Language
-    detail: Chaired a symposium; lead organiser of three "Lunch with a Professor" networking events and an early-career social event, securing a USD 2,000 budget.
-  - when: 2025–present
-    title: Elected student and postdoc representative to the Board, Society for the Neurobiology of Language
-    detail: Advocate for early-career researchers to the Board.
-  - when: 2023–present
+    detail: Chaired a symposium; lead organiser of three "Lunch with a Professor" networking events and an early-career social event.
+  - when: 2025–2027
+    title: Elected student and postdoc representative
+    detail: Board of the Society for the Neurobiology of Language.
+  - when: 2023–2026
     title: Equity, Diversity, and Inclusion Committee member
     detail: MRC Cognition and Brain Sciences Unit, University of Cambridge
   - when: 2020–2022
@@ -18,5 +20,5 @@ leadership:
     title: Conference organising committee
     detail: Neuroscience of Language Conference, Abu Dhabi
 
-# One line, shown under "Reviewing"
-reviewing: "Ad-hoc reviewer for Language, Cognition and Neuroscience; Topics in Cognitive Science; Journal of Psycholinguistic Research; Cognitive Science Conference."
+# # One line, shown under "Reviewing"
+# reviewing: "Ad-hoc reviewer for Language, Cognition and Neuroscience; Topics in Cognitive Science; Journal of Psycholinguistic Research; Cognitive Science Conference."
