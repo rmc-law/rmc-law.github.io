@@ -1,9 +1,10 @@
-# "Funding & awards" on the home page: a curated selection (the CV has the full list).
+# Funding & recognition page (/funding/): a curated selection (the CV has the full list).
 # Shown in file order, so keep it newest first.
 # Each item: when (shown as written), title, optional detail, optional url.
 
 - when: "2026"
   title: Travel Grant, 20th Alpine Brain Imaging Meeting
+  detail: Awarded for scientific excellence
 
 - when: "2024"
   title: Diverse Intelligences Summer Institute Project Accelerator Grant
@@ -14,6 +15,26 @@
 - when: "2022"
   title: Gates Cambridge Scholarship
   detail: Full PhD funding, University of Cambridge
+
+- when: "2022"
+  title: Leverhulme Doctoral Training Programme for the Ecological Study of the Brain
+  detail: PhD studentship, UCL (declined)
+
+- when: "2022"
+  title: UCL–Birkbeck MRC Doctoral Training Programme
+  detail: PhD tuition and maintenance (declined)
+
+- when: "2022"
+  title: UCL Graduate Research Scholarship
+  detail: PhD tuition at the home rate and maintenance (declined)
+
+- when: "2022"
+  title: UCL Overseas Research Scholarship
+  detail: PhD tuition at the overseas rate (declined)
+
+- when: "2022"
+  title: UCL International Scholar Award for Doctoral Training
+  detail: PhD tuition at the overseas rate (declined)
 
 - when: "2021"
   title: Featured Scientist, 100 Scientists of Malaysia
