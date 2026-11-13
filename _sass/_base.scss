@@ -126,8 +126,8 @@ nav a:nth-child(1) {
   }
 
   &.headshot {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
 
     picture {
       display: contents;
@@ -135,8 +135,8 @@ nav a:nth-child(1) {
 
     img {
       border: 0;
-      width: 12rem;
-      clip: rect(0, 12rem, 12rem, 0);
+      width: 10rem;
+      clip: rect(0, 10rem, 10rem, 0);
       position: absolute;
       border-radius: 50%;
     }
