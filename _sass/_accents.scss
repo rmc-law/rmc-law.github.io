@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+// ---------------------------------------------------------------------------
+// Colour accents to complement the green links and pink background.
+// Each numbered block is independent: comment it out (wrap in /* */ or add //
+// to each line) or uncomment an alternative, then refresh. All colours below
+// are at least 5.6:1 on the pink, so they're safe for text.
+// ---------------------------------------------------------------------------
+
+$raspberry: #8c2f55;  // deep berry pink: the pink background's darker cousin (7.4)
+$rose:      #9b3b5a;  // a softer, lighter berry (6.2)
+$plum:      #5b3566;  // muted aubergine, quieter (9.2)
+$old-gold:  #7d5f12;  // antique gold, warm against green (5.6)
+
+
+// 1. BOLD TEXT: bold phrases in the Research text and your name in author lists
+// 1a. Raspberry (on)
+b, strong {
+  color: $raspberry;
+}
+// 1b. Plum (quieter)
+// b, strong { color: $plum; }
+// 1c. Same green as the links (one-accent look)
+// b, strong { color: $brand-color; }
+
+
+// 2. ITALICS: section subheadings (Peer-reviewed, Invited talks, research
+//    themes...) and journal names on the Publications page
+// 2a. Green subheadings
+// h4 { color: $brand-color; }
+// 2b. Raspberry journal names
+// .pub-venue i { color: $raspberry; }
+// 2c. Antique-gold journal names
+// .pub-venue i { color: $old-gold; }
+
+
+// 3. PUBLICATION TAGS (Journal article, Conference paper, Commentary)
+// 3a. Soft green pill: filled, no outline (on)
+.pub-tag {
+  background: rgba($brand-color, .1);
+  border-color: transparent;
+}
+// 3b. Raspberry pill
+// .pub-tag { color: $raspberry; background: rgba($raspberry, .08); border-color: rgba($raspberry, .25); }
+// 3c. Gold outline
+// .pub-tag { color: $old-gold; background: transparent; border-color: rgba($old-gold, .45); }
