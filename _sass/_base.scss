@@ -40,7 +40,7 @@ ul, ol, dl, figure {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica, Arial, Roboto, sans-serif;
+  font-family: $base-font-family;
 }
 
 p {
@@ -49,14 +49,14 @@ p {
 }
 
 b {
-  font-weight: 600;
+  font-weight: $bold-weight;
   color: inherit;
 }
 
 small {
   text-transform: uppercase;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: $bold-weight;
 }
 
 main {
@@ -83,7 +83,7 @@ nav a {
   margin: 0.5rem 3rem;
   color: rgba(107, 114, 128, 1);
   box-shadow: none;
-  font-weight: 300;
+  font-weight: 400;
 
   @include media-query($on-laptop) {
     margin-left: 0;
@@ -110,7 +110,7 @@ nav a:nth-child(1) {
  */
 .container {
   display: grid;
-  grid-template-columns: 18rem 1fr;
+  grid-template-columns: 18rem minmax(0, $text-width);
   max-width: $content-width;
 
   @include media-query($on-laptop) {
@@ -172,6 +172,7 @@ nav a:nth-child(1) {
 }
 
 .main-text {
+  max-width: $text-width;
   padding-top: 2rem;
 }
 
@@ -205,8 +206,8 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  letter-spacing: -.025em;
+  font-weight: $bold-weight;
+  letter-spacing: -.005em;
   color: #111827;
 }
 

@@ -11,9 +11,9 @@
 
 .site-title {
   @include relative-font-size(2.25);
-  font-weight: 700;
+  font-weight: $bold-weight;
   line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -.025em;
+  letter-spacing: -.01em;
   margin-bottom: 0;
   float: left;
 
@@ -34,6 +34,14 @@
 .site-footer {
   margin-top: 0;
   margin-bottom: $spacing-unit;
+
+  .copyright {
+    text-align: center;
+  }
+
+  small {
+    font-weight: 400;
+  }
 }
 
 .footer-wrapper {
@@ -99,7 +107,7 @@
     font-size: 1.725rem;
     line-height: 1;
     letter-spacing: -1px;
-    font-weight: 600;
+    font-weight: $bold-weight;
   }
 
   p {
