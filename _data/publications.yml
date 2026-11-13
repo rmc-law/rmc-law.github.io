@@ -1,0 +1,76 @@
+# Publications page (/publications/).
+#
+# - Published and accepted papers are shown newest first by `year`.
+#   Entries with `status: in-prep` go in a separate "In preparation" list,
+#   in the order they appear here.
+# - authors: write each name as it should appear. Your own name (matching the
+#   site title, "Ryan M.C. Law") is bolded automatically; a trailing * marks
+#   equal contribution and is explained under the entry if `equal_contribution: true`.
+# - type: journal | conference | commentary   (shown as a small tag)
+# - status: published | accepted | in-prep
+# - links: any of doi, pdf, preprint, code, osf (all optional).
+
+- title: A common framework for semantic memory and semantic composition
+  authors: [Ryan M.C. Law, Matthew A. Lambon Ralph, Olaf Hauk]
+  year: 2026
+  venue: Imaging Neuroscience
+  type: journal
+  status: published
+  links:
+    doi: https://doi.org/10.1162/IMAG.a.1131
+    preprint: https://doi.org/10.1101/2025.04.11.648390
+
+- title: "Position: Principles of Animal Cognition to Improve LLM Evaluations"
+  authors: [Sunayana Rane*, Cyrus F. Kirkman*, Graham Todd*, Amanda Royka*, Ryan M.C. Law*, Erica Cartmill, Jacob G. Foster]
+  equal_contribution: true
+  year: 2025
+  venue: Proceedings of the 42nd International Conference on Machine Learning (ICML 2025)
+  type: conference
+  status: accepted
+  links:
+    pdf: https://openreview.net/pdf?id=gCPJFcHskT
+
+- title: "Can we separate semantic representations from computations? A commentary on Calzavarini (2023)"
+  authors: [Olaf Hauk, Federica Magnabosco, Ryan M.C. Law]
+  year: 2023
+  venue: Language, Cognition and Neuroscience
+  type: commentary
+  status: published
+  links:
+    doi: https://doi.org/10.1080/23273798.2023.2226269
+
+- title: "Lists with and without syntax: A new approach to measuring the neural processing of syntax"
+  authors: [Ryan M.C. Law, Liina Pylkkänen]
+  year: 2021
+  venue: Journal of Neuroscience
+  type: journal
+  status: published
+  links:
+    doi: https://doi.org/10.1523/JNEUROSCI.1179-20.2021
+
+- title: Neural correlates of modal displacement and discourse-updating under (un)certainty
+  authors: [Maxime Tulling, Ryan M.C. Law, Ailís Cournane, Liina Pylkkänen]
+  year: 2020
+  venue: eNeuro
+  type: journal
+  status: published
+  links:
+    doi: https://doi.org/10.1523/ENEURO.0290-20.2020
+
+# In preparation (from the CV)
+
+- title: A dual-stream neural network model of semantic cognition
+  authors: [Ryan M.C. Law, Timothy T. Rogers, Matthew A. Lambon Ralph]
+  status: in-prep
+
+- title: "From Bird to Nocturnal Bird to Owl: MEG-EEG insights into anterior temporal lobe function in semantic processing"
+  authors: [Ryan M.C. Law, Olaf Hauk, Matthew A. Lambon Ralph]
+  status: in-prep
+
+- title: Cortical tracking of linguistic units at different speech rates
+  authors: [Ryan M.C. Law, Greta Kaufeld, Hans Rutger Bosker, Andrea E. Martin]
+  status: in-prep
+
+- title: Representational dynamics of meaning composition during natural listening
+  authors: [Ryan M.C. Law, Hugo Weissbart, Andrea E. Martin]
+  status: in-prep

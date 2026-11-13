@@ -1,0 +1,19 @@
+{%- assign done = site.data.publications | where_exp: "p", "p.status != 'in-prep'" | sort: "year" | reverse -%}
+{%- assign inprep = site.data.publications | where: "status", "in-prep" -%}
+<h3>Publications</h3>
+
+<h4>Peer-reviewed</h4>
+<ol class="pub-list" reversed>
+  {%- for pub in done %}
+  {% include publication.html pub=pub %}
+  {%- endfor %}
+</ol>
+
+{%- if inprep.size > 0 %}
+<h4>In preparation</h4>
+<ul class="pub-list pub-list--inprep">
+  {%- for pub in inprep %}
+  {% include publication.html pub=pub %}
+  {%- endfor %}
+</ul>
+{%- endif %}

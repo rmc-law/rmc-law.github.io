@@ -1,0 +1,38 @@
+{%- comment -%}
+  One publication row. Pass the entry as include.pub.
+  Bolds the author name that matches site.title (ignoring a trailing *).
+{%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- assign labels = "journal:Journal article,conference:Conference paper,commentary:Commentary" | split: "," -%}
+<li class="pub">
+  <span class="pub-year">{{ pub.year }}</span>
+  <div class="pub-body">
+    <p class="pub-title">{{ pub.title }}</p>
+    <p class="pub-authors">
+      {%- for author in pub.authors -%}
+        {%- assign clean = author | remove: "*" | strip -%}
+        {%- if clean == site.title -%}<b>{{ author }}</b>{%- else -%}{{ author }}{%- endif -%}
+        {%- unless forloop.last %}, {% endunless -%}
+      {%- endfor -%}
+      {%- if pub.equal_contribution %} <span class="pub-note">(*equal contribution)</span>{% endif -%}
+    </p>
+    {%- if pub.venue %}
+    <p class="pub-venue">
+      <i>{{ pub.venue }}</i>{% if pub.status == "accepted" %} (accepted){% endif %}
+      {%- for l in labels -%}
+        {%- assign kv = l | split: ":" -%}
+        {%- if kv[0] == pub.type %} <span class="pub-tag">{{ kv[1] }}</span>{% endif -%}
+      {%- endfor -%}
+    </p>
+    {%- endif %}
+    {%- if pub.links %}
+    <p class="pub-links">
+      {%- if pub.links.doi %}<a href="{{ pub.links.doi }}" target="_blank">DOI</a>{% endif -%}
+      {%- if pub.links.pdf %}<a href="{{ pub.links.pdf }}" target="_blank">PDF</a>{% endif -%}
+      {%- if pub.links.preprint %}<a href="{{ pub.links.preprint }}" target="_blank">Preprint</a>{% endif -%}
+      {%- if pub.links.code %}<a href="{{ pub.links.code }}" target="_blank">Code</a>{% endif -%}
+      {%- if pub.links.osf %}<a href="{{ pub.links.osf }}" target="_blank">OSF</a>{% endif -%}
+    </p>
+    {%- endif %}
+  </div>
+</li>

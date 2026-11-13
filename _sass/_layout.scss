@@ -80,6 +80,90 @@
 }
 
 /**
+ * Publications: one row per paper, year | entry, newest first
+ */
+.pub-list {
+  list-style: none;
+  margin: 0 0 2.5rem;
+}
+
+.pub {
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba($text-color, .1);
+
+  &:first-child {
+    border-top: 0;
+    padding-top: .25rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  @include media-query($on-medium-phone) {
+    grid-template-columns: 1fr;
+    gap: .15rem;
+  }
+}
+
+.pub-year {
+  color: $muted-color;
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-list--inprep .pub {
+  grid-template-columns: 1fr;
+
+  .pub-year {
+    display: none;
+  }
+}
+
+.pub-title {
+  font-weight: $bold-weight;
+  line-height: 1.4;
+  margin-bottom: .2rem !important;
+}
+
+.pub-authors,
+.pub-venue,
+.pub-links {
+  font-size: .9em;
+  line-height: 1.55;
+}
+
+.pub-note {
+  color: $muted-color;
+}
+
+.pub-tag {
+  display: inline-block;
+  margin-left: .4em;
+  padding: 0 .45em;
+  font-size: .72rem;
+  font-style: normal;
+  font-weight: $bold-weight;
+  letter-spacing: .06em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  vertical-align: .12em;
+  color: $brand-color;
+  border: 1px solid rgba($brand-color, .35);
+  border-radius: 3px;
+}
+
+.pub-links {
+  margin-top: .3rem !important;
+
+  a + a {
+    margin-left: 1rem;
+  }
+}
+
+/**
  * 404
  */
 .error-main {

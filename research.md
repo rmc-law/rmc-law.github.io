@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
-order: 3
+order: 2
 ---
 
 {% include research.html %}
