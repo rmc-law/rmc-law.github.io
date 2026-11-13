@@ -127,6 +127,14 @@ nav a:nth-child(1) {
   &.headshot {
     width: 10rem;
     height: 10rem;
+    // Desktop: nudge the photo right so it sits over the middle of the menu
+    // (menu text starts 3rem in). Try 2rem (subtler) or 3rem (aligned with
+    // the menu's left edge); 0 puts it back at the sidebar edge.
+    margin-left: 2.75rem;
+
+    @include media-query($on-laptop) {
+      margin-left: 0;
+    }
 
     picture {
       display: contents;
