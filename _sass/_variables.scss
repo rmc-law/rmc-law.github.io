@@ -14,7 +14,12 @@ $background-color: #fdf6f6;  // very light pink
 $text-color:       #1f1c1c;  // warm near-black ink (also headings)
 $muted-color:      #675d5d;  // warm grey: nav and secondary text (6.0:1 on the pink)
 $icon-color:       #8f8585;  // lighter warm grey for the social icons (3.4:1; icons need 3:1)
-$brand-color:      #1f4d3a;  // forest green accent: links, focus ring (8.9:1 on the pink)
+// Green accent for links, focus ring, icon/nav hover. Keep exactly one line
+// uncommented (contrast on the pink in brackets; links need at least 4.5).
+// $brand-color:   #1f4d3a;  // original forest green, darkest (9.0)
+// $brand-color:   #1e5a42;  // a touch brighter (7.6)
+$brand-color:      #1b6347;  // brighter, more saturated, still deep (6.7)
+// $brand-color:   #17704f;  // most emerald (5.7)
 
 // Width of the content area, and of the main text column (~65-70 characters)
 $content-width:    1100px;
