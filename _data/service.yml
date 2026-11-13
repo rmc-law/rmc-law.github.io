@@ -2,18 +2,18 @@
 # Shown in file order (newest first). Each item: when, title, optional detail.
 
 leadership:
-  - when: "2027"
+  - when: "2026-2027"
     title: Program Committee member, 19th Annual Meeting of the Society for the Neurobiology of Language
-  - when: "2026"
+  - when: "2025-2026"
     title: Program Committee member, 18th Annual Meeting of the Society for the Neurobiology of Language
     detail: Chaired a symposium; lead organiser of three "Lunch with a Professor" networking events and an early-career social event.
-  - when: 2025–2027
+  - when: 2025-2027
     title: Elected student and postdoc representative
     detail: Board of the Society for the Neurobiology of Language.
-  - when: 2023–2026
+  - when: 2023-2026
     title: Equity, Diversity, and Inclusion Committee member
     detail: MRC Cognition and Brain Sciences Unit, University of Cambridge
-  - when: 2020–2022
+  - when: 2020-2022
     title: Diversity, Equity, and Inclusion Committee member
     detail: Max Planck Institute for Psycholinguistics
   - when: "2019"
