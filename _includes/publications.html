@@ -1,7 +1,11 @@
-{%- assign done = site.data.publications | where_exp: "p", "p.status != 'in-prep'" | where_exp: "p", "p.status != 'under-review'" | sort: "year" | reverse -%}
+{%- assign done = site.data.publications | where_exp: "p", "p.status != 'in-prep'" | where_exp: "p", "p.status != 'under-review'" | where_exp: "p", "p.status != 'thesis'" | sort: "year" | reverse -%}
+{%- assign thesis = site.data.publications | where: "status", "thesis" -%}
 {%- assign review = site.data.publications | where: "status", "under-review" -%}
 {%- assign inprep = site.data.publications | where: "status", "in-prep" -%}
 <h3>Publications</h3>
+{%- if site.scholar_url %}
+<p class="pub-profiles">For citations and the most up-to-date list, see my <a href="{{ site.scholar_url }}" target="_blank">Google Scholar profile</a>.</p>
+{%- endif %}
 
 <h4>Peer-reviewed</h4>
 <ol class="pub-list" reversed>
@@ -9,6 +13,15 @@
   {% include publication.html pub=pub %}
   {%- endfor %}
 </ol>
+
+{%- if thesis.size > 0 %}
+<h4>PhD thesis</h4>
+<ul class="pub-list">
+  {%- for pub in thesis %}
+  {% include publication.html pub=pub %}
+  {%- endfor %}
+</ul>
+{%- endif %}
 
 {%- if review.size > 0 %}
 <h4>Preprints &amp; under review</h4>

@@ -1,13 +1,14 @@
 # Publications page (/publications/).
 #
 # - Published and accepted papers are shown newest first by `year`.
-#   Entries with `status: under-review` go in "Preprints & under review" and
+#   `status: thesis` gets its own "PhD thesis" section; `status: under-review`
+#   goes in "Preprints & under review", and
 #   entries with `status: in-prep` in "In preparation", both in file order.
 # - authors: write each name as it should appear. Your own name (matching the
 #   site title, "Ryan M.C. Law") is bolded automatically; a trailing * marks
 #   equal contribution and is explained under the entry if `equal_contribution: true`.
 # - type: journal | conference | commentary   (shown as a small tag)
-# - status: published | accepted | under-review | in-prep
+# - status: published | accepted | thesis | under-review | in-prep
 # - links: any of doi, pdf, openreview, preprint, code, osf, podcast (Spotify),
 #   apple_podcasts (all optional).
 # - media: optional list of press coverage, each with title, outlet and url
@@ -88,6 +89,17 @@
       url: https://www.youtube.com/watch?v=VEAQRfDdhM4
     - title: Print feature, issue 109 (February 2021), pp. 23–24
       outlet: 999 magazine
+
+# PhD thesis
+
+- title: Concepts, Combinations, and Counts in Brains and Machines
+  authors: [Ryan M.C. Law]
+  year: 2026
+  venue: PhD thesis, University of Cambridge
+  status: thesis
+  links:
+    doi: https://doi.org/10.17863/CAM.136268
+    pdf: https://www.repository.cam.ac.uk/bitstreams/184d56b5-13b2-480f-8631-9f58d748561b/download
 
 # Preprints & under review (from the CV)
 

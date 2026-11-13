@@ -82,6 +82,11 @@
 /**
  * Publications: one row per paper, year | entry, newest first
  */
+.pub-profiles {
+  font-size: .95em;
+  color: $muted-color;
+}
+
 .pub-list {
   list-style: none;
   margin: 0 0 2.5rem;

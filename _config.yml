@@ -8,6 +8,9 @@ url: "https://rmc-law.github.io"
 # Path to the CV linked from the nav
 cv: /assets/CV_RL.pdf
 
+# Google Scholar profile, linked from the Publications page
+scholar_url: https://scholar.google.co.uk/citations?user=d06kiU8AAAAJ&hl=en
+
 # Analytics (GA4); only loaded when JEKYLL_ENV=production
 google_analytics: G-65DJL13DP3
 
