@@ -94,21 +94,3 @@
   status: under-review
   links:
     preprint: https://doi.org/10.64898/2026.09.28.755013
-
-- title: Generative AI boosts productivity across the expertise ladder
-  authors: [J.P. Aparicio, …, Ryan M.C. Law, et al.]
-  status: under-review
-
-# In preparation (from the CV)
-
-- title: A dual-pathway neural network architecture for item-independent structure learning from semantic and arbitrary sequences
-  authors: [Ryan M.C. Law, Timothy T. Rogers, Matthew A. Lambon Ralph]
-  status: in-prep
-
-- title: Cortical tracking of linguistic units at different speech rates
-  authors: [Ryan M.C. Law, Greta Kaufeld, Hans Rutger Bosker, Andrea E. Martin]
-  status: in-prep
-
-- title: Representational dynamics of meaning composition during natural listening
-  authors: [Ryan M.C. Law, Hugo Weissbart, Andrea E. Martin]
-  status: in-prep
