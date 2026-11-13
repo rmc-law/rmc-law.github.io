@@ -1,8 +1,10 @@
-<h3>Teaching</h3>
+<h3>Teaching &amp; Service</h3>
 
-<ul>
-    <li><i>AY '26-'27: Language Learning and Cognition, University of Cambridge</i></li>
-    <li><i>AY '24-'25: Psychology of Language Processing and Learning, University of Cambridge</i></li>
-    <li><i>Fall 2020: Guest lecture on the Neural Basis of Syntactic Structure, Dartmouth College (Psycholinguistics)</i></li>
-    <li><i>Summer 2020: MEG Preprocessing and Analysis Workshop, NYU Abu Dhabi</i></li>
-</ul>
+<h4>Teaching &amp; mentoring</h4>
+{% include rows.html items=site.data.teaching %}
+
+<h4>Leadership &amp; service</h4>
+{% include rows.html items=site.data.service.leadership %}
+
+<h4>Reviewing</h4>
+<p class="row-detail">{{ site.data.service.reviewing }}</p>

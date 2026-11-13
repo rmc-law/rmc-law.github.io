@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Teaching
+title: Teaching & Service
 permalink: /teaching/
-order: 4
+order: 5
 ---
 
 {% include teaching.html %}
