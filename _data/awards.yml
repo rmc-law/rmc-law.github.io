@@ -1,0 +1,19 @@
+# "Funding & awards" on the home page: a curated selection (the CV has the full list).
+# Shown in file order, so keep it newest first.
+# Each item: when (shown as written), title, optional detail, optional url.
+
+- when: "2026"
+  title: Travel Grant, 20th Alpine Brain Imaging Meeting
+
+- when: "2024"
+  title: Diverse Intelligences Summer Institute Project Accelerator Grant
+
+- when: "2024"
+  title: Student Award, 23rd International Conference on Biomagnetism
+
+- when: "2022"
+  title: Gates Cambridge Scholarship
+  detail: Full PhD funding, University of Cambridge
+
+- when: "2021"
+  title: Featured Scientist, 100 Scientists of Malaysia
