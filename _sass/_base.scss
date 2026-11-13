@@ -1,5 +1,4 @@
 @use "sass:math";
-@use "sass:color";
 @use "variables" as *;
 
 /**
@@ -81,8 +80,8 @@ nav {
 
 nav a {
   margin: 0.5rem 3rem;
-  color: rgba(107, 114, 128, 1);
-  box-shadow: none;
+  color: $muted-color;
+  text-decoration: none;
   font-weight: 400;
 
   @include media-query($on-laptop) {
@@ -91,8 +90,8 @@ nav a {
   }
 
   &:hover {
-    color: rgba(17, 24, 39, 1);
-    text-decoration: none;
+    color: $brand-color;
+    background: none;
     box-shadow: none;
   }
 }
@@ -161,12 +160,13 @@ nav a:nth-child(1) {
 }
 
 .social a {
-  color: color.adjust(rgba(24, 28, 36, 1), $lightness: 50%);
+  color: $icon-color;
   margin-right: .5rem;
-  box-shadow: none;
+  text-decoration: none;
 
   &:hover {
-    color: rgba(24, 28, 36, 1);
+    color: $brand-color;
+    background: none;
     box-shadow: none;
   }
 }
@@ -208,7 +208,7 @@ li {
 h1, h2, h3, h4, h5, h6 {
   font-weight: $bold-weight;
   letter-spacing: -.005em;
-  color: #111827;
+  color: $text-color;
 }
 
 h4 {
@@ -218,13 +218,29 @@ h4 {
 /**
  * Links
  */
+// Links: forest green with a soft underline at rest (the green is too close
+// to the body text in brightness for colour alone to mark a link). On hover
+// the underline turns solid and a faint wash of the same green appears.
 a {
-  text-decoration: none;
+  color: $brand-color;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+  text-decoration-color: rgba($brand-color, .4);
+  border-radius: 3px;
 
   &:hover {
-    text-decoration: none;
-    box-shadow: inset 0 -.145em 0 0 $background-color, inset 0 -.45em 0 0 rgba(165, 243, 252, .4);
+    text-decoration-thickness: 2px;
+    text-decoration-color: currentColor;
+    background: rgba($brand-color, .08);
+    box-shadow: 0 0 0 .14em rgba($brand-color, .08);
   }
+}
+
+:focus-visible {
+  outline: 2px solid $brand-color;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 /**
