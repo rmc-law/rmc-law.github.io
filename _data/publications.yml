@@ -8,7 +8,8 @@
 #   equal contribution and is explained under the entry if `equal_contribution: true`.
 # - type: journal | conference | commentary   (shown as a small tag)
 # - status: published | accepted | under-review | in-prep
-# - links: any of doi, pdf, openreview, preprint, code, osf, podcast (all optional).
+# - links: any of doi, pdf, openreview, preprint, code, osf, podcast (Spotify),
+#   apple_podcasts (all optional).
 # - media: optional list of press coverage, each with title, outlet and url
 #   (url optional, e.g. for print-only coverage); shown collapsed under the entry.
 
@@ -50,6 +51,7 @@
   links:
     doi: https://doi.org/10.1523/JNEUROSCI.1179-20.2021
     podcast: https://open.spotify.com/episode/5WOtkRAh9jyQmzS1HuPDyR
+    apple_podcasts: https://podcasts.apple.com/gb/podcast/1-ryan-law-neural-processing-of-lists-with/id1557381319?i=1000512432884
 
 - title: Neural correlates of modal displacement and discourse-updating under (un)certainty
   authors: [Maxime Tulling, Ryan M.C. Law, Ailís Cournane, Liina Pylkkänen]

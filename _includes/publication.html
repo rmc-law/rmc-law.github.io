@@ -26,7 +26,7 @@
     </p>
     {%- endif %}
     {%- if pub.links %}
-    {%- assign link_labels = "doi:DOI,pdf:PDF,openreview:OpenReview,preprint:Preprint,code:Code,osf:OSF,podcast:Podcast" | split: "," %}
+    {%- assign link_labels = "doi:DOI,pdf:PDF,openreview:OpenReview,preprint:Preprint,code:Code,osf:OSF,podcast:Podcast (Spotify),apple_podcasts:Podcast (Apple)" | split: "," %}
     <p class="pub-links">
       {%- for l in link_labels -%}
         {%- assign kv = l | split: ":" -%}
