@@ -1,14 +1,16 @@
 # Publications page (/publications/).
 #
 # - Published and accepted papers are shown newest first by `year`.
-#   Entries with `status: in-prep` go in a separate "In preparation" list,
-#   in the order they appear here.
+#   Entries with `status: under-review` go in "Preprints & under review" and
+#   entries with `status: in-prep` in "In preparation", both in file order.
 # - authors: write each name as it should appear. Your own name (matching the
 #   site title, "Ryan M.C. Law") is bolded automatically; a trailing * marks
 #   equal contribution and is explained under the entry if `equal_contribution: true`.
 # - type: journal | conference | commentary   (shown as a small tag)
-# - status: published | accepted | in-prep
-# - links: any of doi, pdf, preprint, code, osf (all optional).
+# - status: published | accepted | under-review | in-prep
+# - links: any of doi, pdf, openreview, preprint, code, osf, podcast (all optional).
+# - media: optional list of press coverage, each with title, outlet and url
+#   (url optional, e.g. for print-only coverage); shown collapsed under the entry.
 
 - title: A common framework for semantic memory and semantic composition
   authors: [Ryan M.C. Law, Matthew A. Lambon Ralph, Olaf Hauk]
@@ -24,11 +26,11 @@
   authors: [Sunayana Rane*, Cyrus F. Kirkman*, Graham Todd*, Amanda Royka*, Ryan M.C. Law*, Erica Cartmill, Jacob G. Foster]
   equal_contribution: true
   year: 2025
-  venue: Proceedings of the 42nd International Conference on Machine Learning (ICML 2025)
+  venue: Proceedings of the 42nd International Conference on Machine Learning (ICML)
   type: conference
-  status: accepted
+  status: published
   links:
-    pdf: https://openreview.net/pdf?id=gCPJFcHskT
+    openreview: https://openreview.net/pdf?id=gCPJFcHskT
 
 - title: "Can we separate semantic representations from computations? A commentary on Calzavarini (2023)"
   authors: [Olaf Hauk, Federica Magnabosco, Ryan M.C. Law]
@@ -47,6 +49,7 @@
   status: published
   links:
     doi: https://doi.org/10.1523/JNEUROSCI.1179-20.2021
+    podcast: https://open.spotify.com/episode/5WOtkRAh9jyQmzS1HuPDyR
 
 - title: Neural correlates of modal displacement and discourse-updating under (un)certainty
   authors: [Maxime Tulling, Ryan M.C. Law, Ailís Cournane, Liina Pylkkänen]
@@ -56,15 +59,50 @@
   status: published
   links:
     doi: https://doi.org/10.1523/ENEURO.0290-20.2020
+  media:
+    - title: How do we separate the factual from the possible?
+      outlet: NYU press release
+      url: https://www.nyu.edu/about/news-publications/news/2020/december/how-do-we-separate-the-factual-from-the-possible--new-research-s.html
+    - title: How do we separate the factual from the possible?
+      outlet: NYU Abu Dhabi press release
+      url: https://nyuad.nyu.edu/en/news/latest-news/science-and-technology/2020/december/brain-factual-possible.html
+    - title: How the brain distinguishes fact from possibility
+      outlet: Society for Neuroscience press release (archived)
+      url: https://web.archive.org/web/20210120131328/https://www.eurekalert.org/pub_releases/2020-12/sfn-htb120120.php
+    - title: Why just one word can change how the brain processes information
+      outlet: Inverse
+      url: https://www.inverse.com/mind-body/why-the-brain-loves-facts
+    - title: "Making sense of our words: How the brains respond to the factual and the possible"
+      outlet: Cosmos (archived)
+      url: https://web.archive.org/web/20210127081410/https://cosmosmagazine.com/uncategorized/separating-the-factual-from-the-possible/
+    - title: How the brain distinguishes fact from possibility
+      outlet: Scientific American Arabic (archived)
+      url: https://web.archive.org/web/20210119003256/https://www.scientificamerican.com/arabic/articles/news/how-the-brain-distinguishes-fact-from-possibility/
+    - title: "Fake News! NYU Abu Dhabi study looks at how we separate fact from fiction"
+      outlet: The National (UAE)
+      url: https://www.thenationalnews.com/uae/science/fake-news-nyu-abu-dhabi-study-looks-at-how-we-separate-fact-from-fiction-1.1130744
+    - title: How does our brain process fact vs. fiction
+      outlet: The Joe Show (YouTube)
+      url: https://www.youtube.com/watch?v=VEAQRfDdhM4
+    - title: Print feature, issue 109 (February 2021), pp. 23–24
+      outlet: 999 magazine
+
+# Preprints & under review (from the CV)
+
+- title: "Anterior temporal lobes show route-dependent sensitivity to conceptual specificity: Evidence from MEG and EEG"
+  authors: [Ryan M.C. Law, Olaf Hauk, Matthew A. Lambon Ralph]
+  status: under-review
+  links:
+    preprint: https://doi.org/10.64898/2026.09.28.755013
+
+- title: Generative AI boosts productivity across the expertise ladder
+  authors: [J.P. Aparicio, …, Ryan M.C. Law, et al.]
+  status: under-review
 
 # In preparation (from the CV)
 
-- title: A dual-stream neural network model of semantic cognition
+- title: A dual-pathway neural network architecture for item-independent structure learning from semantic and arbitrary sequences
   authors: [Ryan M.C. Law, Timothy T. Rogers, Matthew A. Lambon Ralph]
-  status: in-prep
-
-- title: "From Bird to Nocturnal Bird to Owl: MEG-EEG insights into anterior temporal lobe function in semantic processing"
-  authors: [Ryan M.C. Law, Olaf Hauk, Matthew A. Lambon Ralph]
   status: in-prep
 
 - title: Cortical tracking of linguistic units at different speech rates

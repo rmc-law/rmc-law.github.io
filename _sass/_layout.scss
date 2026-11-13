@@ -114,7 +114,7 @@
   font-variant-numeric: tabular-nums;
 }
 
-.pub-list--inprep .pub {
+.pub-list--undated .pub {
   grid-template-columns: 1fr;
 
   .pub-year {
@@ -160,6 +160,41 @@
 
   a + a {
     margin-left: 1rem;
+  }
+}
+
+.pub-media {
+  margin-top: .35rem;
+  font-size: .9em;
+  line-height: 1.55;
+
+  summary {
+    cursor: pointer;
+    width: fit-content;
+    color: $muted-color;
+  }
+
+  summary:hover {
+    color: $brand-color;
+  }
+
+  ul {
+    list-style: none;
+    margin: .4rem 0 0;
+    padding-left: .9rem;
+    border-left: 2px solid rgba($brand-color, .2);
+  }
+
+  li + li {
+    margin-top: .3rem;
+  }
+}
+
+.pub-media-outlet {
+  color: $muted-color;
+
+  &::before {
+    content: "· ";
   }
 }
 

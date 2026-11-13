@@ -26,13 +26,25 @@
     </p>
     {%- endif %}
     {%- if pub.links %}
+    {%- assign link_labels = "doi:DOI,pdf:PDF,openreview:OpenReview,preprint:Preprint,code:Code,osf:OSF,podcast:Podcast" | split: "," %}
     <p class="pub-links">
-      {%- if pub.links.doi %}<a href="{{ pub.links.doi }}" target="_blank">DOI</a>{% endif -%}
-      {%- if pub.links.pdf %}<a href="{{ pub.links.pdf }}" target="_blank">PDF</a>{% endif -%}
-      {%- if pub.links.preprint %}<a href="{{ pub.links.preprint }}" target="_blank">Preprint</a>{% endif -%}
-      {%- if pub.links.code %}<a href="{{ pub.links.code }}" target="_blank">Code</a>{% endif -%}
-      {%- if pub.links.osf %}<a href="{{ pub.links.osf }}" target="_blank">OSF</a>{% endif -%}
+      {%- for l in link_labels -%}
+        {%- assign kv = l | split: ":" -%}
+        {%- assign key = kv[0] -%}
+        {%- assign url = pub.links[key] -%}
+        {%- if url %}<a href="{{ url }}" target="_blank">{{ kv[1] }}</a>{% endif -%}
+      {%- endfor -%}
     </p>
+    {%- endif %}
+    {%- if pub.media %}
+    <details class="pub-media">
+      <summary>Media coverage ({{ pub.media.size }})</summary>
+      <ul>
+        {%- for m in pub.media %}
+        <li>{% if m.url %}<a href="{{ m.url }}" target="_blank">{{ m.title }}</a>{% else %}{{ m.title }}{% endif %} <span class="pub-media-outlet">{{ m.outlet }}</span></li>
+        {%- endfor %}
+      </ul>
+    </details>
     {%- endif %}
   </div>
 </li>
