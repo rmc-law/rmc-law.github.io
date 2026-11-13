@@ -15,21 +15,15 @@ invited:
   - when: May 2025
     title: New York University
     detail: Neuroscience of Language Lab, New York, USA
-  - when: Mar 2025
-    title: University of Cambridge
-    detail: Cambridge Neuroscience, Cambridge, UK
   - when: May 2024
     title: University College London
     detail: Linguistics Departmental Seminar Series, London, UK
   - when: Dec 2023
     title: University of Bristol
     detail: Department of Computer Science, Bristol, UK
-  - when: Oct 2020
-    title: Dartmouth College
-    detail: Department of Linguistics, Hanover, New Hampshire, USA
 
 public:
-  - when: Mar 2026
+  - when: Mar 2025
     title: "“Neon-striped cats and other complex concepts in the human brain”"
     detail: CamBrain Neurotalks, Cambridge
   - when: Feb 2025
@@ -37,12 +31,14 @@ public:
     detail: Norwich Science Festival, Norwich
 
 media:
-  - when: ""
+  - when: "May 2026"
     title: SNL 2026 teaser with Valentina Borghesani and Ryan Law
     detail: Podcast on plans for the Society for the Neurobiology of Language 2026 meeting in Geneva, as members of the Program Committee
     links:
       - label: Spotify
         url: https://open.spotify.com/episode/0zAEhFjMu6szBiPr0lWbyj
+      - label: Apple Podcasts
+        url: https://podcasts.apple.com/gb/podcast/snl-2026-teaser-with-valentina-borghesani-and-ryan-law/id1550649018?i=1000767505780
   - when: Mar 2021
     title: "Neural processing of lists with and without syntax"
     detail: NeLLab Spotlight podcast, episode 1, on Law & Pylkkänen (2021)
